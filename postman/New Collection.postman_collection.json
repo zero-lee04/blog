@@ -1,0 +1,34 @@
+{
+	"info": {
+		"_postman_id": "db1cc397-6716-43ed-97e9-1b4e1831ab78",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49717751",
+		"_collection_link": "https://www.postman.com/dlrkdud04-6397697/202312745-ws/collection/49717751-db1cc397-6716-43ed-97e9-1b4e1831ab78?action=share&source=collection_link&creator=49717751"
+	},
+	"item": [
+		{
+			"name": "http://113.198.66.68:8080/api/posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://113.198.66.68:8080/api/posts",
+					"protocol": "http",
+					"host": [
+						"113",
+						"198",
+						"66",
+						"68"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,1025 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.blog.BlogApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-12-23T10:13:57.021Z" hostname="DESKTOP-EK20BKN" time="0.305">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.example.blog.BlogApplicationTests" time="0.305"/>
+  <system-out><![CDATA[19:13:48.932 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.blog.BlogApplicationTests]: BlogApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+19:13:49.048 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.blog.BlogApplication for test class com.example.blog.BlogApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.1)
+
+2025-12-23 19:13:49 [Test worker] INFO  c.example.blog.BlogApplicationTests - Starting BlogApplicationTests using Java 17.0.17 with PID 7224 (started by dlrkdud in C:\blog)
+2025-12-23 19:13:49 [Test worker] DEBUG c.example.blog.BlogApplicationTests - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-12-23 19:13:49 [Test worker] INFO  c.example.blog.BlogApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-12-23 19:13:50 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-23 19:13:50 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-23 19:13:50 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 133 ms. Found 5 JPA repository interfaces.
+2025-12-23 19:13:50 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-23 19:13:50 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-23 19:13:50 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.blog.repository.CategoryRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-12-23 19:13:50 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.blog.repository.CommentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-12-23 19:13:50 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.blog.repository.HeartRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-12-23 19:13:50 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.blog.repository.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-12-23 19:13:50 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.blog.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-12-23 19:13:50 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2025-12-23 19:13:51 [Test worker] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-23 19:13:51 [Test worker] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-12-23 19:13:51 [Test worker] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-23 19:13:51 [Test worker] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-23 19:13:51 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-23 19:13:51 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5444f1c3
+2025-12-23 19:13:51 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-23 19:13:51 [Test worker] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.44
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-23 19:13:52 [Test worker] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    alter table comments 
+       drop 
+       foreign key FKh4c7lvsc298whoyd4w9ta25cr
+Hibernate: 
+    alter table comments 
+       drop 
+       foreign key FK8omq0tc18jd43bu5tjh6jvraq
+Hibernate: 
+    alter table hearts 
+       drop 
+       foreign key FK3tfkxs9l4cweppkc4elsopn21
+Hibernate: 
+    alter table hearts 
+       drop 
+       foreign key FK6wikhxvbex8wg7dmdg5tutx6q
+Hibernate: 
+    alter table posts 
+       drop 
+       foreign key FKijnwr3brs8vaosl80jg9rp7uc
+Hibernate: 
+    alter table posts 
+       drop 
+       foreign key FK5lidm6cqbc7u4xhqpxm898qme
+Hibernate: 
+    drop table if exists categories
+Hibernate: 
+    drop table if exists comments
+Hibernate: 
+    drop table if exists hearts
+Hibernate: 
+    drop table if exists posts
+Hibernate: 
+    drop table if exists users
+Hibernate: 
+    create table categories (
+        id bigint not null auto_increment,
+        name varchar(255) not null,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    create table comments (
+        created_at datetime(6),
+        id bigint not null auto_increment,
+        post_id bigint,
+        updated_at datetime(6),
+        user_id bigint,
+        content varchar(500) not null,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    create table hearts (
+        id bigint not null auto_increment,
+        post_id bigint,
+        user_id bigint,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    create table posts (
+        views integer default 0 not null,
+        category_id bigint,
+        created_at datetime(6),
+        id bigint not null auto_increment,
+        updated_at datetime(6),
+        user_id bigint,
+        title varchar(100) not null,
+        content TEXT not null,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    create table users (
+        created_at datetime(6),
+        id bigint not null auto_increment,
+        updated_at datetime(6),
+        email varchar(255) not null,
+        nickname varchar(255) not null,
+        password varchar(255) not null,
+        role enum ('ROLE_ADMIN','ROLE_USER') not null,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    alter table categories 
+       add constraint UKt8o6pivur7nn124jehx7cygw5 unique (name)
+Hibernate: 
+    alter table users 
+       add constraint UK6dotkott2kjsp8vw4d0m25fb7 unique (email)
+Hibernate: 
+    alter table comments 
+       add constraint FKh4c7lvsc298whoyd4w9ta25cr 
+       foreign key (post_id) 
+       references posts (id)
+Hibernate: 
+    alter table comments 
+       add constraint FK8omq0tc18jd43bu5tjh6jvraq 
+       foreign key (user_id) 
+       references users (id)
+Hibernate: 
+    alter table hearts 
+       add constraint FK3tfkxs9l4cweppkc4elsopn21 
+       foreign key (post_id) 
+       references posts (id)
+Hibernate: 
+    alter table hearts 
+       add constraint FK6wikhxvbex8wg7dmdg5tutx6q 
+       foreign key (user_id) 
+       references users (id)
+Hibernate: 
+    alter table posts 
+       add constraint FKijnwr3brs8vaosl80jg9rp7uc 
+       foreign key (category_id) 
+       references categories (id)
+Hibernate: 
+    alter table posts 
+       add constraint FK5lidm6cqbc7u4xhqpxm898qme 
+       foreign key (user_id) 
+       references users (id)
+2025-12-23 19:13:53 [Test worker] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-23 19:13:54 [Test worker] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-23 19:13:54 [Test worker] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-23 19:13:54 [Test worker] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-12-23 19:13:56 [Test worker] INFO  c.example.blog.BlogApplicationTests - Started BlogApplicationTests in 6.827 seconds (process running for 7.894)
+Hibernate: 
+    insert 
+    into
+        users
+        (created_at, email, nickname, password, role, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        categories
+        (name) 
+    values
+        (?)
+Hibernate: 
+    insert 
+    into
+        posts
+        (category_id, content, created_at, title, updated_at, user_id, views) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        posts
+        (category_id, content, created_at, title, updated_at, user_id, views) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        posts
+        (category_id, content, created_at, title, updated_at, user_id, views) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        posts
+        (category_id, content, created_at, title, updated_at, user_id, views) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        posts
+        (category_id, content, created_at, title, updated_at, user_id, views) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        posts
+        (category_id, content, created_at, title, updated_at, user_id, views) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        posts
+        (category_id, content, created_at, title, updated_at, user_id, views) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        posts
+        (category_id, content, created_at, title, updated_at, user_id, views) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        posts
+        (category_id, content, created_at, title, updated_at, user_id, views) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        posts
+        (category_id, content, created_at, title, updated_at, user_id, views) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        posts
+        (category_id, content, created_at, title, updated_at, user_id, views) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        posts
+        (category_id, content, created_at, title, updated_at, user_id, views) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        posts
+        (category_id, content, created_at, title, updated_at, user_id, views) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        posts
+        (category_id, content, created_at, title, updated_at, user_id, views) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        posts
+        (category_id, content, created_at, title, updated_at, user_id, views) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        posts
+        (category_id, content, created_at, title, updated_at, user_id, views) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        posts
+        (category_id, content, created_at, title, updated_at, user_id, views) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        posts
+        (category_id, content, created_at, title, updated_at, user_id, views) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        posts
+        (category_id, content, created_at, title, updated_at, user_id, views) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        posts
+        (category_id, content, created_at, title, updated_at, user_id, views) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comments
+        (content, created_at, post_id, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?)
+✅ 데이터 생성 완료! (유저, 카테고리, 글, 댓글 포함)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
