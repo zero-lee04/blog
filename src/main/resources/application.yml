@@ -8,17 +8,17 @@ spring:
     # 로컬 실행 시 localhost:3306, Docker 실행 시 환경변수로 덮어쓰기됨
     url: jdbc:mysql://localhost:3306/blogdb?useSSL=false&allowPublicKeyRetrieval=true&characterEncoding=UTF-8&serverTimezone=UTC
     username: root
-    password: 1234
+    password: 
 
   # 2. JPA (ORM) 설정
   jpa:
     hibernate:
-      ddl-auto: create # 개발 중에는 update (실무에선 validate/none)
+      ddl-auto: create
     properties:
       hibernate:
-        format_sql: true # 로그에 SQL 예쁘게 출력
-        show_sql: true   # 실행되는 SQL 보여줌
-    defer-datasource-initialization: true # 초기 데이터 로딩 허용
+        format_sql: true 
+        show_sql: true
+    defer-datasource-initialization: true
 
   # 3. Redis 설정
   data:
@@ -33,11 +33,11 @@ spring:
 
 # 4. JWT 설정 (JwtTokenProvider에서 사용)
 jwt:
-  secret: ${JWT_SECRET:v3rySecr3tK3yF0rJw7Sign4tur3MustB3L0ngEnough!}
+  secret: 
 
 logging:
   level:
     root: INFO
-    com.example.blog: DEBUG # 우리 프로젝트의 로그는 더 상세하게
+    com.example.blog: DEBUG 
   pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
